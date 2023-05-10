@@ -65,18 +65,14 @@ img {
 .link {
   text-decoration: none;
 
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+ 
 }
 a,
-button,
-svg,
+button, 
 input {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     textarea 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -785,7 +781,7 @@ body {
 .customers-item {
   display: flex;
   
-  width: 168px;
+  flex-basis: calc((100%-120px) / 6);
   height: 88px;
 }
 .customers-link {
@@ -798,10 +794,11 @@ body {
   height: 100%;
   border: 1px solid var(--customers-icon-color);
   color: var(--customers-icon-color);
+  
 }
 .customers-link:hover,
 .customers-link:focus {
-  border: 1px solid var(--portfolio-btn-background-accent);
+  border-color: 1px solid var(--portfolio-btn-background-accent);
   color: var(--portfolio-btn-background-accent);
 }
 
